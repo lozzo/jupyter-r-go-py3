@@ -1,14 +1,13 @@
 FROM ubuntu:16.04
+LAB
 
 MAINTAINER lozzo
 
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-
-ENV PATH $PATH:/usr/local/go/bin
-
-ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig
-
-ENV GOPATH /root/go
+ENV LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    PATH=$PATH:/usr/local/go/bin \
+    PKG_CONFIG_PATH=/usr/local/lib/pkgconfig \
+    GOPATH=/root/go
 
 RUN apt update --fix-missing \
     && apt install -y software-properties-common \
