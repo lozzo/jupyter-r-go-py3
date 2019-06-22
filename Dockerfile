@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
-LAB
-
-MAINTAINER lozzo
+LABEL author=lozzow
 
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
